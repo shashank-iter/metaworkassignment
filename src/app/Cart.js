@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment, useEffect, useState } from "react";
-import { Dialog, Transition } from "@headlessui/react";
-import { XCircleIcon, ShoppingBagIcon } from "@heroicons/react/outline";
+import { Dialog, Transition } from "./node_modules/@headlessui/react";
+import { XCircleIcon, ShoppingBagIcon } from "./node_modules/@heroicons/react/outline";
 import useStoreItem from "./store";
 
 export default function Cart() {
@@ -23,7 +23,7 @@ function calculateTotal(){
     calculateTotal();
   }, [items]);
 
-  
+
   // cart.forEach(element => {
   //   setTotal(total + element.price);
   // });
